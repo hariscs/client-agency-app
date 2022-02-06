@@ -2,6 +2,8 @@
 	--clr-primary: #1e42a1;
 	--clr-white: #fff;
 	--clr-dark: #000;
+	--clr-light-gray: #eaeaea;
+	--clr-dark-gray: #333;
 }
 html {
 	box-sizing: border-box;
@@ -38,6 +40,12 @@ li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+}
+
+input,
+textarea,
+button {
+	font-family: inherit;
 }
 
 .container {
