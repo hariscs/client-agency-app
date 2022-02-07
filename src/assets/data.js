@@ -1,3 +1,8 @@
+import g1 from '../assets/g1.png';
+import g2 from '../assets/g2.png';
+import b1 from '../assets/b1.png';
+import b2 from '../assets/b2.png';
+
 export const cardData = [
 	{
 		id: 1,
@@ -30,5 +35,36 @@ export const cardData = [
 			'We have delivered numerous successful projects around the globe to our clients',
 		icon: '/assets/icons/expert-analysis.svg',
 		bgClr: '#A5C2F5',
+	},
+];
+
+export const clientData = [
+	{
+		id: 1,
+		text: "Going into business with Svetro was the best decision I ever made. I'm glad to have come in contact with Svetro, and I would highly recommended.",
+		img: g2,
+		name: 'Catherine Buschamp',
+		address: 'Toronto, Canada',
+	},
+	{
+		id: 2,
+		text: "Going into business with Svetro was the best decision I ever made. I'm glad to have come in contact with Svetro, and I would highly recommended.",
+		img: g1,
+		name: 'Shaun Duffey',
+		address: 'Toronto, Canada',
+	},
+	{
+		id: 3,
+		text: "Going into business with Svetro was the best decision I ever made. I'm glad to have come in contact with Svetro, and I would highly recommended.",
+		img: b1,
+		name: 'Jason Lee',
+		address: 'Toronto, Canada',
+	},
+	{
+		id: 4,
+		text: "Going into business with Svetro was the best decision I ever made. I'm glad to have come in contact with Svetro, and I would highly recommended.",
+		img: b2,
+		name: 'Rebecca Maslow',
+		address: 'Toronto, Canada',
 	},
 ];
