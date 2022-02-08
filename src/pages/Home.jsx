@@ -1,4 +1,5 @@
 import Clients from '../components/Clients';
+import Consult from '../components/Consult';
 import Hero from '../components/Hero';
 import Stats from '../components/Stats';
 import TrackRecord from '../components/TrackRecord';
@@ -10,6 +11,7 @@ const Home = () => {
 			<TrackRecord />
 			<Stats />
 			<Clients />
+			<Consult />
 		</>
 	);
 };

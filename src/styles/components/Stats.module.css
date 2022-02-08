@@ -34,7 +34,8 @@
 }
 
 .stats__cardIcon {
-	max-width: 30px;
+	color: var(--clr-primary);
+	font-size: 2rem;
 }
 
 .stats__cardTitle {
