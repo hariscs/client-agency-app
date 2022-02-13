@@ -1,0 +1,13 @@
+.hero {
+	background: var(--clr-primary);
+	color: var(--clr-white);
+	padding: 3.75rem 0;
+}
+
+.hero__title {
+	margin-bottom: 1.25rem;
+}
+
+.hero__subtitle {
+	max-width: 45ch;
+}
