@@ -9,8 +9,9 @@
 }
 
 .contact__info {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	align-items: center;
+	justify-content: center;
 	background: var(--clr-white);
 	box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.14);
 	border-radius: 5px;
@@ -41,4 +42,25 @@
 	display: flex;
 	gap: 1rem;
 	flex-wrap: wrap;
+}
+
+@media (min-width: 50em) {
+	.contact__info {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.contact__img {
+		grid-column: 1/2;
+	}
+
+	.contact__details {
+		grid-column: 2/-1;
+	}
+
+	.contact__img img {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 80em) {
 }
