@@ -2,3 +2,51 @@
 	background: var(--clr-light-gray);
 	padding-block: 3.938rem;
 }
+
+.vision__grid {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+}
+
+.vision__title {
+	color: var(--clr-primary);
+	margin-bottom: 0.625rem;
+}
+
+.vision__subtitle {
+	color: var(--clr-dark-gray);
+	max-width: 38ch;
+}
+
+@media (min-width: 50em) {
+	.vision__grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.vision__title {
+		margin-bottom: 4.313rem;
+	}
+
+	.vision__subtitle {
+		max-width: 45ch;
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 80em) {
+	.vision__grid {
+		gap: 0.5rem;
+	}
+	.vision__grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.col__vision {
+		grid-column: 1/3;
+	}
+	.col__mission {
+		grid-column: 3;
+	}
+}
