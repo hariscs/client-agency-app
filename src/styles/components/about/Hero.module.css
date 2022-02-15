@@ -11,3 +11,13 @@
 .hero__subtitle {
 	max-width: 45ch;
 }
+
+@media (min-width: 50em) {
+	.hero__title {
+		font-size: 1.75rem;
+	}
+	.hero__subtitle {
+		max-width: 59ch;
+		font-size: 1.5rem;
+	}
+}

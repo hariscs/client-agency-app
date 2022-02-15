@@ -1,3 +1,34 @@
 .team {
 	padding-block: 4.5rem;
 }
+
+.images__grid {
+	display: grid;
+	gap: 1rem;
+	align-items: center;
+	justify-content: center;
+}
+
+.img__col img {
+	width: 200px;
+	height: 300px;
+}
+
+@media (min-width: 50em) {
+	.images__grid {
+		grid-template-columns: repeat(2, minmax(0, 200px));
+	}
+
+	.img__mt {
+		margin-top: -5rem;
+	}
+	.img__mb {
+		margin-top: 1rem;
+	}
+}
+
+@media (min-width: 80em) {
+	.images__grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
