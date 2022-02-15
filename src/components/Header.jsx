@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from '../styles/components/Header.module.css';
+import Button from './Button';
 
 const Header = () => {
 	const [click, setClick] = useState(true);
@@ -76,6 +77,7 @@ const Header = () => {
 									Contact Us
 								</NavLink>
 							</li>
+							{/* <Button btnType='btn__primary'>Talk to US</Button> */}
 						</ul>
 					</nav>
 					<div className={styles.mobile__menuIcon}>

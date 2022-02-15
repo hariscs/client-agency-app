@@ -1,6 +1,6 @@
 import styles from '../../styles/components/about/Contact.module.css';
 import img from '../../assets/hero-bg.jpg';
-import Button from './Button';
+import Button from '../Button';
 
 const Contact = () => {
 	return (
@@ -17,8 +17,8 @@ const Contact = () => {
 							great together.
 						</h3>
 						<div className={styles.contact__btns}>
-							<Button text='Give us a call' bg='#1e42a1' clr='#fff' />
-							<Button text='Email Us' clr='#1e42a1' />
+							<Button btnType='btn__secondary'>Give us a call</Button>
+							<Button btnType='btn__secondaryOutline'>Email Us</Button>
 						</div>
 					</div>
 				</div>

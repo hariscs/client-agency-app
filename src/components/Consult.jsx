@@ -10,7 +10,9 @@ const Consult = () => {
 						<h2 className={styles.card__text}>
 							It doesnt matter where you are in the world, we are ready to talk.
 						</h2>
-						<Button text='Get free Consultation' />
+						<Button btnType='btn__primaryOutline' bg='#fff' clr='#1e42a1'>
+							Get free Consultation
+						</Button>
 					</div>
 				</div>
 			</div>
