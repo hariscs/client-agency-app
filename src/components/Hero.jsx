@@ -13,7 +13,7 @@ const Hero = () => {
 						We discover undiscovered markets and give our clients a competitive
 						edge.
 					</p>
-					<Button btnType='btn__primaryOutline'>Talk to Us Today</Button>
+					<Button btnType='btn__white'>Talk to Us Today</Button>
 				</div>
 			</div>
 		</div>

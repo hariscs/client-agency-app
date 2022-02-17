@@ -81,3 +81,26 @@ export const clientData = [
 ];
 
 export const images = [img1, img2, img3, img4];
+
+export const setupCard = [
+	{
+		id: 1,
+		num: 1,
+		title: 'Find product',
+		subtitle:
+			'Go through the services we have on offer. Find the features you are after',
+	},
+	{
+		id: 2,
+		num: 2,
+		title: 'Reach out to us',
+		subtitle: 'Contact us through the links that are provided',
+	},
+	{
+		id: 3,
+		num: 3,
+		title: 'Voila',
+		subtitle:
+			'Let’s discuss the requirements of your business and get up and running',
+	},
+];

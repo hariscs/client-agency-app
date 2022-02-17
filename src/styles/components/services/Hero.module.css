@@ -1,0 +1,37 @@
+.hero {
+	background: var(--clr-svetro-light);
+	padding-block: 3rem;
+	text-align: center;
+}
+
+.hero__title {
+	color: var(--clr-light-blue);
+	margin-bottom: 2rem;
+	font-size: 2.25rem;
+}
+
+.hero__title span {
+	color: var(--clr-svetro-red);
+}
+
+.hero__subtitle {
+	color: var(--clr-primary);
+	font-weight: 500;
+	font-size: 1.125rem;
+}
+
+@media (min-width: 50em) {
+	.hero {
+		padding-block: 5rem;
+	}
+	.hero__title {
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+	}
+
+	.hero__subtitle {
+		font-size: 1.75rem;
+		max-width: 44ch;
+		margin-inline: auto;
+	}
+}

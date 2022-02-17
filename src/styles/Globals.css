@@ -2,6 +2,9 @@
 	--clr-primary: #1e42a1;
 	--clr-white: #fff;
 	--clr-dark: #000;
+	--clr-svetro-light: #f4f4f4;
+	--clr-svetro-red: #f7ccb3;
+	--clr-light-blue: #7879f1;
 	--clr-light-gray: #eaeaea;
 	--clr-dark-gray: #333;
 }
@@ -12,6 +15,7 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0;
@@ -69,7 +73,8 @@ button {
 }
 
 .btn__primary,
-.btn__primaryOutline {
+.btn__primaryOutline,
+.btn__white {
 	border-radius: 20px;
 }
 
@@ -96,16 +101,34 @@ button {
 	border-color: var(--clr-primary);
 }
 
+.btn__white {
+	color: var(--clr-primary);
+	background: var(--clr-white);
+}
+
 .btn__secondaryOutline {
 	color: var(--clr-primary);
 	background: transparent;
 }
 
 /* slider */
+.slider {
+	overflow: hidden;
+	position: relative;
+}
+
 .innerSlider {
 	display: flex;
 	gap: 1rem;
+	/* animation: slider 10s linear infinite; */
 }
-.slider {
-	overflow: hidden;
-}
+
+/* @keyframes slider {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	100% {
+		transform: translate(-150%, 0);
+	}
+} */

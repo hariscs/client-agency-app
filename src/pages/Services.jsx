@@ -1,8 +1,14 @@
+import Hero from '../components/services/Hero';
+import MarketSetup from '../components/services/MarketSetup';
+// import ServiceOffers from '../components/services/ServiceOffer';
+
 const Services = () => {
 	return (
-		<div>
-			<h1>Services page</h1>
-		</div>
+		<>
+			<Hero />
+			<MarketSetup />
+			{/* <ServiceOffer /> */}
+		</>
 	);
 };
 

@@ -1,0 +1,25 @@
+.card {
+	background: var(--clr-white);
+	box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+	border-radius: 20px;
+	padding: 0.625rem;
+	display: flex;
+	align-items: center;
+	gap: 1.25rem;
+	max-width: 380px;
+}
+
+.card__num {
+	color: var(--clr-primary);
+	font-size: 4.5rem;
+	font-weight: 500;
+}
+
+.card__title {
+	margin-bottom: 0.5rem;
+}
+
+.card__subtitle {
+	font-size: 0.875rem;
+	max-width: 32ch;
+}
