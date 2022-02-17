@@ -1,0 +1,34 @@
+.offers {
+	background: var(--clr-light-blue);
+	padding-block: 1.438rem;
+}
+
+.offers__title {
+	color: var(--clr-white);
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 2.563rem;
+}
+
+.offers__cards {
+	display: grid;
+	gap: 2rem;
+	justify-content: center;
+}
+
+@media (min-width: 50em) {
+	.offers__title {
+		margin-bottom: 5.188rem;
+		font-size: 2.5rem;
+		max-width: 25ch;
+		margin-inline: auto;
+	}
+	.offers {
+		padding-block: 3.438rem;
+	}
+
+	.offers__cards {
+		grid-template-columns: repeat(2, minmax(0, 395px));
+		gap: 5rem;
+	}
+}
