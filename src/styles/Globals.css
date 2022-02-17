@@ -100,3 +100,12 @@ button {
 	color: var(--clr-primary);
 	background: transparent;
 }
+
+/* slider */
+.innerSlider {
+	display: flex;
+	gap: 1rem;
+}
+.slider {
+	overflow: hidden;
+}

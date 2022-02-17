@@ -71,6 +71,13 @@ export const clientData = [
 		name: 'Rebecca Maslow',
 		address: 'Toronto, Canada',
 	},
+	{
+		id: 5,
+		text: "Going into business with Svetro was the best decision I ever made. I'm glad to have come in contact with Svetro, and I would highly recommended.",
+		img: b2,
+		name: 'Rebecca Maslow',
+		address: 'Toronto, Canada',
+	},
 ];
 
 export const images = [img1, img2, img3, img4];

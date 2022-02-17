@@ -1,6 +1,7 @@
 .clientsSection {
 	background: #d1e1fa;
 	padding: 1.25rem 0;
+	overflow: hidden;
 }
 
 .clients__flex {
@@ -24,20 +25,18 @@
 }
 
 .clientsCards {
-	display: grid;
-	gap: 1.25rem;
+	/* display: grid;
+	gap: 1.25rem; */
+	/* display: flex;
+	gap: 2rem; */
+	border: 1px solid red;
 }
 
 @media (min-width: 50em) {
 	.clientsSection {
 		padding: 3.125rem 0;
 	}
-	.clientsCards {
+	/* .clientsCards {
 		grid-template-columns: repeat(2, 1fr);
-	}
-}
-@media (min-width: 80em) {
-	.clientsCards {
-		grid-template-columns: repeat(4, 1fr);
-	}
+	} */
 }

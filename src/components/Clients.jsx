@@ -14,21 +14,22 @@ const Clients = () => {
 							dignissim id eu magna eu.
 						</p>
 					</div>
-
-					<div className={styles.clientsCards}>
-						{clientData.map((data) => {
-							const { id, name, text, img, address } = data;
-							return (
-								<ClientCard
-									key={id}
-									name={name}
-									text={text}
-									img={img}
-									address={address}
-								/>
-							);
-						})}
-					</div>
+				</div>
+			</div>
+			<div className='slider'>
+				<div className='innerSlider'>
+					{clientData.map((data) => {
+						const { id, name, text, img, address } = data;
+						return (
+							<ClientCard
+								key={id}
+								name={name}
+								text={text}
+								img={img}
+								address={address}
+							/>
+						);
+					})}
 				</div>
 			</div>
 		</section>
