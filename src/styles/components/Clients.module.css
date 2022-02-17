@@ -24,19 +24,8 @@
 	margin-bottom: 3.25rem;
 }
 
-.clientsCards {
-	/* display: grid;
-	gap: 1.25rem; */
-	/* display: flex;
-	gap: 2rem; */
-	border: 1px solid red;
-}
-
 @media (min-width: 50em) {
 	.clientsSection {
 		padding: 3.125rem 0;
 	}
-	/* .clientsCards {
-		grid-template-columns: repeat(2, 1fr);
-	} */
 }
