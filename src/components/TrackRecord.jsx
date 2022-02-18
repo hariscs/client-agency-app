@@ -1,12 +1,23 @@
 import styles from '../styles/components/TrackRecord.module.css';
 import Card from './Card';
 import { cardData } from '../assets/data';
+import { motion } from 'framer-motion';
 
 const TrackRecord = () => {
 	return (
 		<section className={styles.trackSection}>
 			<div className='container'>
-				<div className='trackSection__info'>
+				<motion.div
+					className={styles.trackSection__info}
+					initial='hidden'
+					whileInView='visible'
+					viewport={{ once: true }}
+					transition={{ duration: 1 }}
+					variants={{
+						visible: { opacity: 1, translateY: 0 },
+						hidden: { opacity: 0, translateY: -50 },
+					}}
+				>
 					<h2 className={styles.trackSection__title}>
 						We have the track-record
 					</h2>
@@ -15,18 +26,29 @@ const TrackRecord = () => {
 						business can be difficult. However, with us you dont have to worry
 						about all that.
 					</p>
-				</div>
+				</motion.div>
 				<div className={styles.trackSection__cards}>
-					{cardData.map((data) => {
+					{cardData.map((data, i) => {
 						const { id, title, subtitle, icon, bgClr } = data;
 						return (
-							<Card
-								key={id}
-								title={title}
-								subtitle={subtitle}
-								icon={icon}
-								bgClr={bgClr}
-							/>
+							<motion.div
+								initial='hidden'
+								whileInView='visible'
+								viewport={{ once: true }}
+								transition={{ duration: 0.3, delay: i * 0.3 }}
+								variants={{
+									visible: { opacity: 1, translateX: 0, translateY: 0 },
+									hidden: { opacity: 0, translateX: -50, translateY: -50 },
+								}}
+							>
+								<Card
+									key={id}
+									title={title}
+									subtitle={subtitle}
+									icon={icon}
+									bgClr={bgClr}
+								/>
+							</motion.div>
 						);
 					})}
 				</div>

@@ -9,14 +9,8 @@
 	align-items: center;
 	justify-content: space-between;
 	max-width: 395px;
+	min-height: 600px;
 }
-
-/* .card:first-child {
-	border-color: red;
-}
-.card:nth-child(2) {
-	border-color: rgb(0, 255, 115);
-} */
 
 .card__title {
 	text-align: center;
